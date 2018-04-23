@@ -1,16 +1,38 @@
-.App {
-  text-align: center;
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    width: 165px;
 }
 
-.App-header {
-  height: 150px;
-  padding: 20px;
+.button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0;
+  background-color: wheat;
+  color: white;
+  border: 2px solid white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.button:hover {
+  background-color: green;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
-.App-intro {
-  font-size: large;
+.list {
+  color: red;
+  background-color: grey;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.list li {
+  color: red;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
 }

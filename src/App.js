@@ -10,7 +10,8 @@ class App extends Component {
       items: []
     };
 
-    this.addItem=this.addItem.bind(this);
+    this.addItem = this.addItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
   }
 
   addItem(e) {
@@ -34,17 +35,30 @@ class App extends Component {
     e.preventDefault();
   }
 
+  deleteItem(key) {
+    var filteredItems = this.state.items.filter(function(item) {
+
+      return (item.key !== key)
+    });
+
+    this.setState({
+      items: filteredItems
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          </header>
+        <div class="header">
           <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a}
-              placeholder="Add stuff"></input>
-            <button type="Submit">Add</button>
-            </form>
-            <Listing entries={this.state.items}/>
+            <input class="input" ref={(a) => this._inputElement = a}
+              placeholder="Add stuff">
+            </input>
+            <button class="button" type="Submit">Add</button>
+          </form>
+        </div>
+            <Listing entries={this.state.items}
+              delete={this.deleteItem}/>
       </div>
     );
   }
