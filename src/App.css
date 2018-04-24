@@ -30,6 +30,12 @@
   border-radius: 5px;
   list-style: none;
   padding-left: 0;
+  width: 25vw;
+  overflow-wrap: break-word;
+}
+
+.list {
+  padding-left: 0;
 }
 
 .list li:hover {
