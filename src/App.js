@@ -57,8 +57,10 @@ class App extends Component {
             <button class="button" type="Submit">Add</button>
           </form>
         </div>
+          <div class="posts">
             <Listing entries={this.state.items}
               delete={this.deleteItem}/>
+            </div>
       </div>
     );
   }

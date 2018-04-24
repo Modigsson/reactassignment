@@ -10,7 +10,7 @@
   font-size: 16px;
   margin: 10px;
   margin-right: 0;
-  background-color: wheat;
+  background-color: rgba(40, 116, 166);
   color: white;
   border: 2px solid white;
 }
@@ -21,18 +21,18 @@
   cursor: pointer;
 }
 
-.list {
-  color: red;
-  background-color: grey;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-}
-
 .list li {
-  color: red;
-  padding-bottom: 15px;
+  text-align: left;
+  background-color: rgba(202, 207, 210, 0.5);
+  color: rgba(231, 76, 60);
+  padding-bottom: 25px;
   margin-bottom: 15px;
   border-radius: 5px;
   list-style: none;
+  padding-left: 0;
+}
+
+.list li:hover {
+  background-color: rgba(88, 214, 141, 0.5);
+  cursor: pointer;
 }
